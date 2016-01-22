@@ -9,7 +9,7 @@ return
 return
 
 ::.zmrineuro::
-    InputBox, region, Region, Enter a region.  (e.g. Cervical/Lumbar/Thoracic)
+    InputBox, region, Region, Enter a region.  (e.g. cervical/lumbar/thoracic)
     SendInput We recommended consideration to get an MRI of
     if (gender = "m") {
         SendInput % " his "
