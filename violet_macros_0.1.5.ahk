@@ -1,11 +1,21 @@
-^!m::
-    gender := "m"
-    MsgBox % "Gender is now set to male."
-return
+; ^!m::
+;     gender := "m"
+;     MsgBox % "Gender is now set to male."
+; return
 
-^!f::
-    gender := "f"
-    MsgBox % "Gender is now set to female."
+; ^!f::
+;     gender := "f"
+;     MsgBox % "Gender is now set to female."
+; return
+
+^!m::
+    if (gender = "m") {
+        gender := "f"
+        MsgBox % "Gender is now set to female."
+    } else {
+        gender := "m"
+        MsgBox % "Gender is now set to male."
+    }
 return
 
 ::.zmrineuro::
